@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-kube-assingnment-pod
+  labels:
+    app: kube-assingnment1
+    tire: frontend
+
+spec:
+  containers:
+  - name: kube-assingnment1
+    image: natesha2000/my-kube-assingnment

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-kube-assingnment-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kube-assingnment
+  template:
+    metadata:
+      labels:
+        app: kube-assingnment
+    spec:
+      containers:
+      - name: kube-assingnment
+        image: natesha2000/my-kube-assingnment
+        ports:
+        - containerPort: 8080
+
+
+
+
